@@ -4,6 +4,8 @@
 # Node modules
 node_modules/
 
+uploads/
+
 # Custom folders
 classroo/
 
