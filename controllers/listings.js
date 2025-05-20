@@ -28,7 +28,7 @@ module.exports.addNewLissting = async (req, res, next) => {
   newlist.owner = req.user._id;
   newlist.image = { url, filename };
   newlist.geometry = response.body.features[0].geometry;
-
+  // console.log(newlist.image);
   let saveListing = await newlist.save();
   console.log(saveListing);
   req.flash("success", "New Listing Created!");
